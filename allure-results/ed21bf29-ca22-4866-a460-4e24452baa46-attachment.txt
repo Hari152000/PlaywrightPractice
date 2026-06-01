@@ -1,0 +1,8 @@
+Selected country: 
+        India
+      
+Selected colors: [
+  '\n        Red\n      ',
+  '\n        Green\n      ',
+  '\n        White\n      '
+]

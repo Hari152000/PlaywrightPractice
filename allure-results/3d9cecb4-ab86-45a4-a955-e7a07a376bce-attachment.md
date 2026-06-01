@@ -1,0 +1,506 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: DynamicXpath.spec.js >> Window Handling
+- Location: tests\DynamicXpath.spec.js:2:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e13]:
+    - generic [ref=e16]:
+      - generic [ref=e18]:
+        - generic [ref=e27]:
+          - generic [ref=e29]:
+            - img "Image" [ref=e32]
+            - img "Image" [ref=e35]
+          - link "Image Image" [ref=e37] [cursor=pointer]:
+            - /url: /flights-travel-uhp-at-store?marketplace=FKT
+            - img "Image" [ref=e40]
+            - img "Image" [ref=e43]
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - img [ref=e55]
+            - generic [ref=e58]: Location not set
+          - generic [ref=e60]:
+            - generic [ref=e61]: Select delivery location
+            - img [ref=e62]
+      - banner [ref=e70]:
+        - generic [ref=e74]:
+          - button "Search for Products, Brands and More" [ref=e75] [cursor=pointer]:
+            - img "Search Icon" [ref=e76]
+          - textbox "Search for Products, Brands and More" [ref=e80]
+        - generic [ref=e81]:
+          - generic [ref=e86]:
+            - link "Login" [ref=e87] [cursor=pointer]:
+              - /url: /account/login?ret=/
+              - img "Login" [ref=e88]
+              - generic [ref=e89]: Login
+            - img "Chevron" [ref=e90]
+          - generic [ref=e95]:
+            - link "More" [ref=e96] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e97]: More
+            - img "Chevron" [ref=e98]
+          - link "Cart Cart" [ref=e101] [cursor=pointer]:
+            - /url: /viewcart?marketplace=FLIPKART
+            - img "Cart" [ref=e102]
+            - generic [ref=e103]: Cart
+      - generic [ref=e105]:
+        - link "For You" [ref=e110] [cursor=pointer]:
+          - /url: https://www.flipkart.com/
+          - generic [ref=e112]:
+            - img [ref=e115]
+            - generic [ref=e116]: For You
+        - link "Fashion" [ref=e121] [cursor=pointer]:
+          - /url: /aw-base-new-inline-2025-at-store
+          - generic [ref=e123]:
+            - img [ref=e126]
+            - generic [ref=e127]: Fashion
+        - link "Mobiles" [ref=e132] [cursor=pointer]:
+          - /url: /mobile-phones-sasa-lele-2026-ab-inline-at-store
+          - generic [ref=e134]:
+            - img [ref=e137]
+            - generic [ref=e138]: Mobiles
+        - link "Beauty" [ref=e143] [cursor=pointer]:
+          - /url: /bpc-bau-new-inline-at-store
+          - generic [ref=e145]:
+            - img [ref=e148]
+            - generic [ref=e149]: Beauty
+        - link "Electronics" [ref=e154] [cursor=pointer]:
+          - /url: /new-elec-clp-march-at-store
+          - generic [ref=e156]:
+            - img [ref=e159]
+            - generic [ref=e160]: Electronics
+        - link "Home" [ref=e165] [cursor=pointer]:
+          - /url: /home-kitchen-25-at-store
+          - generic [ref=e167]:
+            - img [ref=e170]
+            - generic [ref=e171]: Home
+        - link "Appliances" [ref=e176] [cursor=pointer]:
+          - /url: /tv-and-appliances-inline-ab-at-store
+          - generic [ref=e178]:
+            - img [ref=e181]
+            - generic [ref=e182]: Appliances
+        - link "Toys, baby.." [ref=e187] [cursor=pointer]:
+          - /url: /toys-baby-2025-new-at-store
+          - generic [ref=e189]:
+            - img [ref=e192]
+            - generic [ref=e193]: Toys, baby..
+        - link "Food & Health" [ref=e198] [cursor=pointer]:
+          - /url: /fnhc-2025-new-at-store
+          - generic [ref=e200]:
+            - img [ref=e203]
+            - generic [ref=e204]: Food & Health
+        - link "Auto Accessories" [ref=e209] [cursor=pointer]:
+          - /url: /aa-2025-new-at-store
+          - generic [ref=e211]:
+            - img [ref=e214]
+            - generic [ref=e215]: Auto Accessories
+        - link "2 Wheelers" [ref=e220] [cursor=pointer]:
+          - /url: /twowheelers-at-store
+          - generic [ref=e222]:
+            - img [ref=e225]
+            - generic [ref=e226]: 2 Wheelers
+        - link "Sports & Fitness" [ref=e231] [cursor=pointer]:
+          - /url: /sf-inline-2025-at-store
+          - generic [ref=e233]:
+            - img [ref=e236]
+            - generic [ref=e237]: Sports & Fitness
+        - link "Books & Media" [ref=e242] [cursor=pointer]:
+          - /url: /booksmedia-2025-at-store
+          - generic [ref=e244]:
+            - img [ref=e247]
+            - generic [ref=e248]: Books & Media
+        - link "Furniture" [ref=e253] [cursor=pointer]:
+          - /url: /india-ka-furniture-studio-inlines-at-store
+          - generic [ref=e255]:
+            - img [ref=e258]
+            - generic [ref=e259]: Furniture
+    - generic [ref=e267]:
+      - generic [ref=e282]:
+        - link "Image" [ref=e289] [cursor=pointer]:
+          - /url: /clothing-and-accessories/kurtas-ethnic-sets-and-bottoms/~cs-bjdq7rmmc9/pr?sid=clo%2Ccfv&collection-tab-name=kurtsets&pageCriteria=default&p%5B%5D=facets.price_range.from%3D129&p%5B%5D=facets.price_range.to%3DMax&param=12912&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiSUFEIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D&nnc=98NU42OQ54KF_IAD&BU=Mixed
+          - img "Image" [ref=e292]
+        - link "Image" [ref=e299] [cursor=pointer]:
+          - /url: https://dl.flipkart.com/dl/nothing-phone-4a-black-256-gb/p/itm47712249513d4?pid=MOBHK7DDHT8VHYFZ&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=UUMJ1CKGJVNJ_AD&BU=Mixed
+          - img "Image" [ref=e302]
+        - link "Image" [ref=e309] [cursor=pointer]:
+          - /url: /health-care/health-supplements/protein-supplement/pr?sid=hlc%2Cetg%2C1rx&param=99932&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiSUFEIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D&nnc=6DULANH8CFVM_IAD&BU=Mixed
+          - img "Image" [ref=e312]
+        - link "Image" [ref=e319] [cursor=pointer]:
+          - /url: /mobiles/~cs-gnsxkmbwtk/pr?sid=tyy%2C4io&collection-tab-name=HMD+VIBE2+5G&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=9K2F22XTZTPM_AD&BU=Mixed
+          - img "Image" [ref=e322]
+        - link "Image" [ref=e329] [cursor=pointer]:
+          - /url: /electronics-event-days-at-ads-store?ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=DXJBNV9XWNRC_AD&BU=Mixed
+          - img "Image" [ref=e332]
+      - generic [ref=e350]:
+        - link "Image" [ref=e355] [cursor=pointer]:
+          - /url: /electronics-event-days-at-ads-store?ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=31QUCGEBH34U_AD&BU=Mixed
+          - img "Image" [ref=e358]
+        - link "Image" [ref=e363] [cursor=pointer]:
+          - /url: /kitchen-cookware-serveware/~cs-pgr0l9fxxq/pr?sid=upp&collection-tab-name=Milton&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=CDX4R0QC6AGW_AD&BU=Mixed
+          - img "Image" [ref=e366]
+        - link "Image" [ref=e371] [cursor=pointer]:
+          - /url: /bags-wallets-belts/luggage-travel/suitcases/pr?sid=reh%2Cplk%2Ctvv&p%5B%5D=facets.brand%255B%255D%3DKamiliant%2Bby%2BAmerican%2BTourister&p%5B%5D=facets.brand%255B%255D%3DKAMILIANT&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=HX9SF80AF5O3_AD&BU=Mixed
+          - img "Image" [ref=e374]
+      - generic [ref=e384]:
+        - generic [ref=e388]:
+          - img "Image" [ref=e391]
+          - generic [ref=e395]: Add to your wishlist
+        - generic [ref=e398]:
+          - link "Image New Collection Under ₹199" [ref=e403] [cursor=pointer]:
+            - /url: /all/~cs-edaa62377eb31dc377832e9d6e2bc097/pr?sid=4rr%2Ckm5%2Cipq&marketplace=FLIPKART&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJVbmRlciDigrkxOTkiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJwcmljZV9yYW5nZSI6eyJyYW5nZVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJwcmljZV9yYW5nZSIsImluZmVyZW5jZVR5cGUiOiJGQUNFVCIsIm1pbiI6bnVsbCwibWF4IjoxOTkuMCwidmFsdWVUeXBlIjoiUkFOR0VfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJBQ0NISDJQS05aTlpSU1NWIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiQ2FzZXMgJiBDb3ZlcnMiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19&BU=Mixed
+            - img "Image" [ref=e413]
+            - generic [ref=e416]:
+              - generic [ref=e417]: New Collection
+              - generic [ref=e418]: Under ₹199
+          - link "Image Big Savings Top Rated" [ref=e423] [cursor=pointer]:
+            - /url: /all/~cs-71e39febdc9c093cccbd2c7932cbbe1e/pr?sid=tng%2C56a%2Cfq8%2Casz&marketplace=FLIPKART&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJUb3AgUmF0ZWQiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJUb3AgUmF0ZWQiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJETkVISkZHOVFLOURXQk4yIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D&BU=Mixed
+            - img "Image" [ref=e433]
+            - generic [ref=e436]:
+              - generic [ref=e437]: Big Savings
+              - generic [ref=e438]: Top Rated
+          - link "Image Most Loved Under ₹299" [ref=e443] [cursor=pointer]:
+            - /url: /all/~cs-e12eacbd44bc91e8782ad7a4fe8722cf/pr?sid=clo%2Cqfl%2Cv5v%2Ckzg&marketplace=FLIPKART&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJVbmRlciDigrkyOTkiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJwcmljZV9yYW5nZSI6eyJyYW5nZVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJwcmljZV9yYW5nZSIsImluZmVyZW5jZVR5cGUiOiJGQUNFVCIsIm1pbiI6bnVsbCwibWF4IjoyOTkuMCwidmFsdWVUeXBlIjoiUkFOR0VfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJCUkFGUFZHRkdIRkhERURHIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiVG9wIFJhdGVkIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D&BU=Mixed
+            - img "Image" [ref=e453]
+            - generic [ref=e456]:
+              - generic [ref=e457]: Most Loved
+              - generic [ref=e458]: Under ₹299
+          - link "Image Best Picks Up to 90% Off" [ref=e463] [cursor=pointer]:
+            - /url: /all/~cs-6f63f4873143d5ddb4fe8bfe617e7f75/pr?sid=clo%2C8on%2Czpd%2C9og&marketplace=FLIPKART&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJVcCB0byA5MCUgT2ZmIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJzaW5nbGVWYWx1ZUF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlIjoiU0FSSEhaSEdVQlpKRkZHWSIsInZhbHVlVHlwZSI6IlNJTkdMRV9WQUxVRUQifX0sImRpc2NvdW50X3JhbmdlX3YxIjp7InJhbmdlVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6ImRpc2NvdW50X3JhbmdlX3YxIiwiaW5mZXJlbmNlVHlwZSI6IkZBQ0VUIiwibWluIjpudWxsLCJtYXgiOjkwLjAsInZhbHVlVHlwZSI6IlJBTkdFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiQmVzdCBQaWNrcyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D&BU=Mixed
+            - img "Image" [ref=e473]
+            - generic [ref=e476]:
+              - generic [ref=e477]: Best Picks
+              - generic [ref=e478]: Up to 90% Off
+      - generic [ref=e488]:
+        - generic [ref=e492]:
+          - img "Image" [ref=e495]
+          - generic [ref=e497]:
+            - generic [ref=e499]: Shop for a Cool Summer
+            - link [ref=e500] [cursor=pointer]:
+              - /url: /offers-list/shop-for-a-cool-summer?screen=dynamic&pk=contentTags%3DGCD_THEME_5~marketplace%3DFLIPKART~widgetType%3DdealCardV3~contentType%3DpersonalisedRecommendation%2FC5&marketplace=FLIPKART&BU=Mixed
+              - img [ref=e503]
+        - generic [ref=e508]:
+          - link "Image Face Wash Min. 50% Off" [ref=e513] [cursor=pointer]:
+            - /url: https://www.flipkart.com/all/~cs-5ab19791d4f627a2a36b60d5791384ca/pr?sid=g9b,ema,5la,jav&marketplace=FLIPKART&restrictLocale=true&BU=Mixed
+            - img "Image" [ref=e523]
+            - generic [ref=e526]:
+              - generic [ref=e527]: Face Wash
+              - generic [ref=e528]: Min. 50% Off
+          - link "Image Men’s Slippers & Flip Flops Min. 70% Off" [ref=e533] [cursor=pointer]:
+            - /url: https://www.flipkart.com/all/~cs-79e42ad52149a075d0a3b31f35294baa/pr?sid=osp,cil,e1r&marketplace=FLIPKART&restrictLocale=true&BU=Mixed
+            - img "Image" [ref=e543]
+            - generic [ref=e546]:
+              - generic [ref=e547]: Men’s Slippers & Flip Flops
+              - generic [ref=e548]: Min. 70% Off
+          - link "Image Men’s Casual Shoes Min. 70% Off" [ref=e553] [cursor=pointer]:
+            - /url: https://www.flipkart.com/all/~cs-28462d7669ffdf82990baaadbb6225e0/pr?sid=osp,cil,e1f&marketplace=FLIPKART&restrictLocale=true&BU=Mixed
+            - img "Image" [ref=e563]
+            - generic [ref=e566]:
+              - generic [ref=e567]: Men’s Casual Shoes
+              - generic [ref=e568]: Min. 70% Off
+          - link "Image Men's Track Pants Min. 50% Off" [ref=e573] [cursor=pointer]:
+            - /url: https://www.flipkart.com/all/~cs-a25bfe08632f1095aae6efcf69602ad9/pr?sid=clo,vua,jlk,6ql&marketplace=FLIPKART&restrictLocale=true&BU=Mixed
+            - img "Image" [ref=e583]
+            - generic [ref=e586]:
+              - generic [ref=e587]: Men's Track Pants
+              - generic [ref=e588]: Min. 50% Off
+      - generic [ref=e598]:
+        - generic [ref=e602]: Brands in Spotlight
+        - generic [ref=e604]:
+          - link "Image" [ref=e609] [cursor=pointer]:
+            - /url: /r18/~cs-msbklylv2g/pr?sid=r18&collection-tab-name=G+shock&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=GP8QIFSX3MD7_AD&BU=Mixed
+            - img "Image" [ref=e612]
+          - link "Image" [ref=e617] [cursor=pointer]:
+            - /url: /osp/~cs-c1i2f7zoul/pr?sid=osp&collection-tab-name=Abros&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=UWUMC7CKMN42_AD&BU=Mixed
+            - img "Image" [ref=e620]
+          - link "Image" [ref=e625] [cursor=pointer]:
+            - /url: /mens-footwear/~cs-e2amlo6ria/pr?sid=osp%2Ccil&collection-tab-name=Louis+Phillipe&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=S34C9IRPP391_AD&BU=Mixed
+            - img "Image" [ref=e628]
+      - generic [ref=e640]:
+        - link "Image" [ref=e645] [cursor=pointer]:
+          - /url: /triggr-arcus-one-60h-battery-4-mic-enc-dual-pairing-rubber-grip-13mm-drivers-v6-0-bluetooth/p/itmcaf717e45f345?pid=SMWGQHN4MWU6ZJGN&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=FULZUMGUISJG_AD&BU=Mixed
+          - img "Image" [ref=e648]
+        - link "Image" [ref=e653] [cursor=pointer]:
+          - /url: /triggr-arcus-one-60h-battery-4-mic-enc-dual-pairing-rubber-grip-13mm-drivers-v6-0-bluetooth/p/itmcaf717e45f345?pid=ACCG6DS7WDJHGWSH&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=R90DTNBEJETS_AD&BU=Mixed
+          - img "Image" [ref=e656]
+        - link "Image" [ref=e661] [cursor=pointer]:
+          - /url: /triggr-arcus-one-60h-battery-4-mic-enc-dual-pairing-rubber-grip-13mm-drivers-v6-0-bluetooth/p/itmcaf717e45f345?pid=SMWH6DTX5P5EBYFT&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=XKZ6U0MHWXBT_AD&BU=Mixed
+          - img "Image" [ref=e664]
+      - generic [ref=e674]:
+        - generic [ref=e678]:
+          - img "Image" [ref=e681]
+          - generic [ref=e683]:
+            - generic [ref=e685]: Appliance for Cool Summer
+            - link [ref=e686] [cursor=pointer]:
+              - /url: /offers-list/appliance-for-cool-summer?screen=dynamic&pk=contentTags%3DGCD_THEME_1~marketplace%3DFLIPKART~widgetType%3DdealCardV3~contentType%3DpersonalisedRecommendation%2FC5&marketplace=FLIPKART&BU=Mixed
+              - img [ref=e689]
+        - generic [ref=e694]:
+          - link "Image True Wireless Min. 50% Off" [ref=e699] [cursor=pointer]:
+            - /url: https://www.flipkart.com/all/~cs-6ef68bc8d283b86730515a8f2c87ff23/pr?sid=0pm,fcn,821,a7x,2si&marketplace=FLIPKART&restrictLocale=true&BU=Mixed
+            - img "Image" [ref=e709]
+            - generic [ref=e712]:
+              - generic [ref=e713]: True Wireless
+              - generic [ref=e714]: Min. 50% Off
+          - link "Image Neckband Special offer" [ref=e719] [cursor=pointer]:
+            - /url: https://www.flipkart.com/all/~cs-2a0c4b3036f2339cfee37c9c64a79f41/pr?sid=0pm,fcn,821,a7x,2rv&marketplace=FLIPKART&restrictLocale=true&BU=Mixed
+            - img "Image" [ref=e729]
+            - generic [ref=e732]:
+              - generic [ref=e733]: Neckband
+              - generic [ref=e734]: Special offer
+          - link "Image Speakers Min. 50% Off" [ref=e739] [cursor=pointer]:
+            - /url: https://www.flipkart.com/all/~cs-6d75d208ca824e804868f4b7a3959867/pr?sid=0pm,0o7&marketplace=FLIPKART&restrictLocale=true&BU=Mixed
+            - img "Image" [ref=e749]
+            - generic [ref=e752]:
+              - generic [ref=e753]: Speakers
+              - generic [ref=e754]: Min. 50% Off
+          - link "Image Wireless Headphones Min. 50% Off" [ref=e759] [cursor=pointer]:
+            - /url: https://www.flipkart.com/all/~cs-023e2d44ef3841dd1c64187b87292b2d/pr?sid=0pm,fcn,gc3,ka8&marketplace=FLIPKART&restrictLocale=true&BU=Mixed
+            - img "Image" [ref=e769]
+            - generic [ref=e772]:
+              - generic [ref=e773]: Wireless Headphones
+              - generic [ref=e774]: Min. 50% Off
+      - generic [ref=e784]:
+        - generic [ref=e788]:
+          - img "Image" [ref=e791]
+          - generic [ref=e793]:
+            - generic [ref=e795]: Home Decor & Furnishing
+            - link [ref=e796] [cursor=pointer]:
+              - /url: /offers-list/recommended-for-you?screen=dynamic&pk=contentTags%3DGCD_THEME_2~marketplace%3DFLIPKART~widgetType%3DdealCardV3~contentType%3DpersonalisedRecommendation%2FC5&marketplace=FLIPKART&BU=Mixed
+              - img [ref=e799]
+        - generic [ref=e804]:
+          - link "Image Key Holders Popular" [ref=e809] [cursor=pointer]:
+            - /url: https://www.flipkart.com/all/~cs-240ae04533cb5bdc9f64f1f89c88586f/pr?sid=arb,a77,8js&marketplace=FLIPKART&restrictLocale=true&BU=Mixed
+            - img "Image" [ref=e819]
+            - generic [ref=e822]:
+              - generic [ref=e823]: Key Holders
+              - generic [ref=e824]: Popular
+          - link "Image Wall Clocks Special offer" [ref=e829] [cursor=pointer]:
+            - /url: https://www.flipkart.com/all/~cs-8b813c3829a3723aebaef347eba7112a/pr?sid=arb,kjw,bm1&marketplace=FLIPKART&restrictLocale=true&BU=Mixed
+            - img "Image" [ref=e839]
+            - generic [ref=e842]:
+              - generic [ref=e843]: Wall Clocks
+              - generic [ref=e844]: Special offer
+          - link "Image Appliance Covers Min. 50% Off" [ref=e849] [cursor=pointer]:
+            - /url: https://www.flipkart.com/all/~cs-4b08408bf6a1039bba42174a54d352b4/pr?sid=jra,ixy,hqs&marketplace=FLIPKART&restrictLocale=true&BU=Mixed
+            - img "Image" [ref=e859]
+            - generic [ref=e862]:
+              - generic [ref=e863]: Appliance Covers
+              - generic [ref=e864]: Min. 50% Off
+          - link "Image Mosquito Nets Special offer" [ref=e869] [cursor=pointer]:
+            - /url: https://www.flipkart.com/all/~cs-7a2a9bad7e4968fdcb25208f9e8f6578/pr?sid=jra,knw,i6y&marketplace=FLIPKART&restrictLocale=true&BU=Mixed
+            - img "Image" [ref=e879]
+            - generic [ref=e882]:
+              - generic [ref=e883]: Mosquito Nets
+              - generic [ref=e884]: Special offer
+      - generic [ref=e894]:
+        - generic [ref=e898]:
+          - img "Image" [ref=e901]
+          - generic [ref=e905]: People also viewed
+        - generic [ref=e908]:
+          - link "Image Best deals From ₹249" [ref=e913] [cursor=pointer]:
+            - /url: /womens-ethnic-sets/pr?sid=clo%2Ccfv%2Citg%2Ctys&p%5B%5D=facets.price_range.from%3D249&p%5B%5D=facets.price_range.to%3DMax&Param=3598&hpid=806BEL_97phh8CSf62Kzaap7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTI0OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IkVUSEhLNUFURjVDR0haV1kiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJLdXJ0YSBzZXRzIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D&BU=Mixed
+            - img "Image" [ref=e923]
+            - generic [ref=e926]:
+              - generic [ref=e927]: Best deals
+              - generic [ref=e928]: From ₹249
+          - link "Image Men's Shoes Min. 40% Off" [ref=e933] [cursor=pointer]:
+            - /url: /mens-footwear/pr?sid=osp%2Ccil&p%5B%5D=facets.discount_range_v1%255B%255D%3D40%2525%2Bor%2Bmore&p%5B%5D=facets.brand%255B%255D%3DBata&p%5B%5D=facets.brand%255B%255D%3DSparx&p%5B%5D=facets.brand%255B%255D%3DWOODLAND&p%5B%5D=facets.brand%255B%255D%3Daction&p%5B%5D=facets.brand%255B%255D%3DCROCS&p%5B%5D=facets.brand%255B%255D%3DAbros&p%5B%5D=facets.brand%255B%255D%3DU.S.%2BPOLO%2BASSN.&p%5B%5D=facets.brand%255B%255D%3DKILLER&p%5B%5D=facets.brand%255B%255D%3DLIBERTY&p%5B%5D=facets.brand%255B%255D%3DWildcraft&param=78&hpid=o4LvAi_fOWvQqI4HLq9Qu6p7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJNaW4uIDQwJSBPZmYiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJTSE9IM0pHTVpQWFpZRU43IiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiQWN0aW9uLCBLaWxsZXIiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19&BU=Mixed
+            - img "Image" [ref=e943]
+            - generic [ref=e946]:
+              - generic [ref=e947]: Men's Shoes
+              - generic [ref=e948]: Min. 40% Off
+          - link "Image Running Shoes Min. 50% Off" [ref=e953] [cursor=pointer]:
+            - /url: /mens-footwear/pr?sid=osp%2Ccil&p%5B%5D=facets.brand%255B%255D%3DPUMA&p%5B%5D=facets.brand%255B%255D%3DREEBOK&p%5B%5D=facets.discount_range_v1%255B%255D%3D50%2525%2Bor%2Bmore&param=5654&hpid=VDZBNR1CItukqvueH7l7gqp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJNaW4uIDUwJSBPZmYiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJTTkRHUEVDSkFYN0JKQ1dYIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiQURJREFTICYgUmVlYm9rIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D&BU=Mixed
+            - img "Image" [ref=e963]
+            - generic [ref=e966]:
+              - generic [ref=e967]: Running Shoes
+              - generic [ref=e968]: Min. 50% Off
+          - link "Image shoes From ₹129" [ref=e973] [cursor=pointer]:
+            - /url: /mens-footwear/slippers-flip-flops/pr?sid=osp%2Ccil%2Ce1r&fm=neo%2Fmerchandising&iid=M_8620794b-87fa-4e66-9eff-534828a75346_2_X1NCR146KC29_MC.DGNKX2JVJU8J&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_5_L2_view-all&cid=DGNKX2JVJU8J&p%5B%5D=facets.brand%255B%255D%3Daadi&p%5B%5D=facets.brand%255B%255D%3DBERSACHE&p%5B%5D=facets.brand%255B%255D%3DBirde&p%5B%5D=facets.brand%255B%255D%3DFAUSTO&p%5B%5D=facets.brand%255B%255D%3DVellinto&p%5B%5D=facets.brand%255B%255D%3DBRUTON&p%5B%5D=facets.brand%255B%255D%3DSvaar&p%5B%5D=facets.brand%255B%255D%3DKoburg&p%5B%5D=facets.brand%255B%255D%3DCHIPS&p%5B%5D=facets.brand%255B%255D%3DBONKERZ&p%5B%5D=facets.brand%255B%255D%3DWave%2BWalker&p%5B%5D=facets.brand%255B%255D%3DCassiey&p%5B%5D=facets.brand%255B%255D%3DChupps&p%5B%5D=facets.brand%255B%255D%3DDenill&p%5B%5D=facets.brand%255B%255D%3DDr.%2BOrtho&p%5B%5D=facets.brand%255B%255D%3DEVOK&p%5B%5D=facets.brand%255B%255D%3DFabbmate&p%5B%5D=facets.brand%255B%255D%3DFeather%2BLeather&p%5B%5D=facets.brand%255B%255D%3DFOOTSOFT&p%5B%5D=facets.brand%255B%255D%3DFootox&p%5B%5D=facets.brand%255B%255D%3DFootup&p%5B%5D=facets.brand%255B%255D%3DK%2527%2BFootlance&p%5B%5D=facets.brand%255B%255D%3DKhadim%2527s&p%5B%5D=facets.brand%255B%255D%3DKolapuri&p%5B%5D=facets.brand%255B%255D%3DKraasa&p%5B%5D=facets.brand%255B%255D%3DLakhani%2BVardaan&p%5B%5D=facets.brand%255B%255D%3DLayasa&p%5B%5D=facets.brand%255B%255D%3DKzaara&p%5B%5D=facets.brand%255B%255D%3DOrtho%2B%252B%2BRest&p%5B%5D=facets.brand%255B%255D%3DPampy%2BAngel&p%5B%5D=facets.brand%255B%255D%3DShozie&p%5B%5D=facets.brand%255B%255D%3DVokline&p%5B%5D=facets.brand%255B%255D%3DWELCOME&p%5B%5D=facets.brand%255B%255D%3DYUKI&p%5B%5D=facets.brand%255B%255D%3DYokai&p%5B%5D=facets.brand%255B%255D%3DDOCTOR%2BEXTRA%2BSOFT&p%5B%5D=facets.brand%255B%255D%3DBrauch&p%5B%5D=facets.brand%255B%255D%3DCogs&p%5B%5D=facets.brand%255B%255D%3DDr%2BPlus&p%5B%5D=facets.brand%255B%255D%3DDRACKFOOT&p%5B%5D=facets.brand%255B%255D%3DKapani%2BFashion&p%5B%5D=facets.brand%255B%255D%3DJUMPLITE&p%5B%5D=facets.brand%255B%255D%3DKenill&p%5B%5D=facets.brand%255B%255D%3DKubu&p%5B%5D=facets.brand%255B%255D%3DLavavs&p%5B%5D=facets.brand%255B%255D%3DLYVI&p%5B%5D=facets.brand%255B%255D%3DLooksFootwear&p%5B%5D=facets.brand%255B%255D%3DMARVEL&p%5B%5D=facets.brand%255B%255D%3DNy&p%5B%5D=facets.brand%255B%255D%3DNOBELITE&p%5B%5D=facets.brand%255B%255D%3DORTHO%2BJOY&p%5B%5D=facets.brand%255B%255D%3DPoonam%2BFashion&p%5B%5D=facets.brand%255B%255D%3DRADHIKA%2BGROUP&p%5B%5D=facets.brand%255B%255D%3Dsachin&p%5B%5D=facets.brand%255B%255D%3DRowlans&p%5B%5D=facets.brand%255B%255D%3DThe%2BSouled%2BStore&p%5B%5D=facets.brand%255B%255D%3DTWO%2BSOFT&p%5B%5D=facets.brand%255B%255D%3DVEMZONE&p%5B%5D=facets.brand%255B%255D%3DZugatti&p%5B%5D=facets.brand%255B%255D%3DZURU%2BBUNCH&p%5B%5D=facets.brand%255B%255D%3DEL%2BPASO&p%5B%5D=facets.type%255B%255D%3DSlides&hpid=k59WEZ2RndxIFP8VUUQsTap7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTEyOSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IlNGRkg3RTdaUUZOUVFBWk0iLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJDRlctc2hvZXMtRjEyOSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D&BU=Mixed
+            - img "Image" [ref=e983]
+            - generic [ref=e986]:
+              - generic [ref=e987]: shoes
+              - generic [ref=e988]: From ₹129
+      - generic [ref=e1001]:
+        - link "Image For GenZ" [ref=e1006] [cursor=pointer]:
+          - /url: /spoyl-ff-store?param=0986&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkZvciBHZW5aIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D&BU=Mixed
+          - img "Image" [ref=e1009]
+          - generic [ref=e1010]: For GenZ
+        - link "Image Flipkart Pay" [ref=e1015] [cursor=pointer]:
+          - /url: /flipkart-pay-at-store?ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkZsaXBrYXJ0IFBheSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D&BU=Mixed
+          - img "Image" [ref=e1018]
+          - generic [ref=e1019]: Flipkart Pay
+        - link "Image Originals" [ref=e1024] [cursor=pointer]:
+          - /url: /flipkart-originals-large-at-store?ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIk9yaWdpbmFscyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D&BU=Mixed
+          - img "Image" [ref=e1027]
+          - generic [ref=e1028]: Originals
+        - link "Image Gift Cards" [ref=e1033] [cursor=pointer]:
+          - /url: /gift-card-at-store?param=7654567&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkdpZnQgQ2FyZHMiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19&BU=Mixed
+          - img "Image" [ref=e1036]
+          - generic [ref=e1037]: Gift Cards
+        - link "Image BLACK" [ref=e1042] [cursor=pointer]:
+          - /url: /flipkart-black-store?param=389440&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkJMQUNLIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D&BU=Mixed
+          - img "Image" [ref=e1045]
+          - generic [ref=e1046]: BLACK
+        - link "Image SuperCoin" [ref=e1051] [cursor=pointer]:
+          - /url: /supercoin?param=76523&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIlN1cGVyQ29pbiJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D&BU=Mixed
+          - img "Image" [ref=e1054]
+          - generic [ref=e1055]: SuperCoin
+        - link "Image Next-Gen" [ref=e1060] [cursor=pointer]:
+          - /url: /next-gen-brands-store?param=098124&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIk5leHQtR2VuIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D&BU=Mixed
+          - img "Image" [ref=e1063]
+          - generic [ref=e1064]: Next-Gen
+      - generic [ref=e1068]: Hang on, loading content
+      - generic [ref=e1080]:
+        - generic [ref=e1081]: Flipkart - Your go-to place for Online Shopping
+        - generic [ref=e1082]: +
+      - contentinfo [ref=e1083]:
+        - generic [ref=e1085]:
+          - generic [ref=e1086]:
+            - generic [ref=e1087]:
+              - generic [ref=e1088]: ABOUT
+              - link "Contact Us" [ref=e1089] [cursor=pointer]:
+                - /url: /helpcentre?otracker=footer_navlinks
+              - link "About Us" [ref=e1090] [cursor=pointer]:
+                - /url: https://corporate.flipkart.net/corporate-home
+              - link "Careers" [ref=e1091] [cursor=pointer]:
+                - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+              - link "Flipkart Stories" [ref=e1092] [cursor=pointer]:
+                - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+              - link "Press" [ref=e1093] [cursor=pointer]:
+                - /url: http://stories.flipkart.com/category/top-stories/news/
+              - link "Corporate Information" [ref=e1094] [cursor=pointer]:
+                - /url: /corporate-information
+            - generic [ref=e1095]:
+              - generic [ref=e1096]: GROUP COMPANIES
+              - link "Myntra" [ref=e1097] [cursor=pointer]:
+                - /url: https://www.myntra.com/
+              - link "Cleartrip" [ref=e1098] [cursor=pointer]:
+                - /url: https://www.cleartrip.com/
+              - link "Shopsy" [ref=e1099] [cursor=pointer]:
+                - /url: https://www.shopsy.in
+            - generic [ref=e1100]:
+              - generic [ref=e1101]: HELP
+              - link "Payments" [ref=e1102] [cursor=pointer]:
+                - /url: /pages/payments
+              - link "Shipping" [ref=e1103] [cursor=pointer]:
+                - /url: /pages/shipping
+              - link "Cancellation & Returns" [ref=e1104] [cursor=pointer]:
+                - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+              - link "FAQ" [ref=e1105] [cursor=pointer]:
+                - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+            - generic [ref=e1106]:
+              - generic [ref=e1107]: CONSUMER POLICY
+              - link "Cancellation & Returns" [ref=e1108] [cursor=pointer]:
+                - /url: /pages/returnpolicy?otracker=footer_navlinks
+              - link "Terms Of Use" [ref=e1109] [cursor=pointer]:
+                - /url: /pages/terms?otracker=footer_navlinks
+              - link "Security" [ref=e1110] [cursor=pointer]:
+                - /url: /pages/paymentsecurity?otracker=footer_navlinks
+              - link "Privacy" [ref=e1111] [cursor=pointer]:
+                - /url: /pages/privacypolicy?otracker=footer_navlinks
+              - link "Sitemap" [ref=e1112] [cursor=pointer]:
+                - /url: /sitemap?otracker=footer_navlinks
+              - link "Grievance Redressal" [ref=e1113] [cursor=pointer]:
+                - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+              - link "EPR Compliance" [ref=e1114] [cursor=pointer]:
+                - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+              - link "FSSAI Food Safety Connect App" [ref=e1115] [cursor=pointer]:
+                - /url: https://fssai.gov.in/cms/food-safety-connect.php
+            - generic [ref=e1116]:
+              - generic [ref=e1117]: "Mail Us:"
+              - generic [ref=e1118]:
+                - paragraph [ref=e1119]: Flipkart Internet Private Limited,
+                - paragraph [ref=e1120]: Buildings Alyssa, Begonia &
+                - paragraph [ref=e1121]: Clove Embassy Tech Village,
+                - paragraph [ref=e1122]: Outer Ring Road, Devarabeesanahalli Village,
+                - paragraph [ref=e1123]: Bengaluru, 560103,
+                - paragraph [ref=e1124]: Karnataka, India
+              - generic [ref=e1125]: "Social:"
+              - generic [ref=e1126]:
+                - link "Facebook" [ref=e1128] [cursor=pointer]:
+                  - /url: https://www.facebook.com/flipkart
+                  - img "Facebook" [ref=e1129]
+                - link "Twitter" [ref=e1131] [cursor=pointer]:
+                  - /url: https://www.twitter.com/flipkart
+                  - img "Twitter" [ref=e1132]
+                - link "YouTube" [ref=e1134] [cursor=pointer]:
+                  - /url: https://www.youtube.com/flipkart
+                  - img "YouTube" [ref=e1135]
+                - link "Instagram" [ref=e1137] [cursor=pointer]:
+                  - /url: https://www.instagram.com/flipkart
+                  - img "Instagram" [ref=e1138]
+            - generic [ref=e1139]:
+              - generic [ref=e1140]: "Registered Office Address:"
+              - generic [ref=e1141]:
+                - paragraph [ref=e1142]: Flipkart Internet Private Limited,
+                - paragraph [ref=e1143]: Buildings Alyssa, Begonia &
+                - paragraph [ref=e1144]: Clove Embassy Tech Village,
+                - paragraph [ref=e1145]: Outer Ring Road, Devarabeesanahalli Village,
+                - paragraph [ref=e1146]: Bengaluru, 560103,
+                - paragraph [ref=e1147]: Karnataka, India
+                - paragraph [ref=e1148]: "CIN : U51109KA2012PTC066107"
+                - paragraph
+                - paragraph [ref=e1149]:
+                  - text: "Telephone:"
+                  - link "044-45614700" [ref=e1150] [cursor=pointer]:
+                    - /url: tel:044-45614700
+                  - text: /
+                  - link "044-67415800" [ref=e1151] [cursor=pointer]:
+                    - /url: tel:044-67415800
+          - generic [ref=e1152]:
+            - generic [ref=e1153]:
+              - img "Become a Seller" [ref=e1154]
+              - link "Become a Seller" [ref=e1155] [cursor=pointer]:
+                - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+            - generic [ref=e1156]:
+              - img "Advertise" [ref=e1157]
+              - generic "Advertise" [ref=e1158]
+            - generic [ref=e1159]:
+              - img "Gift Cards" [ref=e1160]
+              - link "Gift Cards" [ref=e1161] [cursor=pointer]:
+                - /url: /the-gift-card-store?otracker=footer_navlinks
+            - generic [ref=e1162]:
+              - img "Help Center" [ref=e1163]
+              - link "Help Center" [ref=e1164] [cursor=pointer]:
+                - /url: /helpcentre?otracker=footer_navlinks
+            - generic [ref=e1165]: © 2007-2026 Flipkart.com
+            - img "Payment methods"
+  - contentinfo
+  - generic [ref=e1167]:
+    - button "✕" [ref=e1168] [cursor=pointer]
+    - generic [ref=e1170]:
+      - generic [ref=e1171]:
+        - text: Login
+        - paragraph [ref=e1172]: Get access to your Orders, Wishlist and Recommendations
+      - generic [ref=e1175]:
+        - generic [ref=e1176]:
+          - textbox [active] [ref=e1177]
+          - generic: Enter Email/Mobile number
+          - generic [ref=e1178]: Please enter valid Email ID/Mobile number
+        - generic [ref=e1179]:
+          - text: By continuing, you agree to Flipkart's
+          - link "Terms of Use" [ref=e1180] [cursor=pointer]:
+            - /url: /pages/terms
+          - text: and
+          - link "Privacy Policy" [ref=e1181] [cursor=pointer]:
+            - /url: /pages/privacypolicy
+          - text: .
+        - button "Request OTP" [ref=e1183] [cursor=pointer]
+        - link "New to Flipkart? Create an account" [ref=e1185] [cursor=pointer]:
+          - /url: /account/login?signup=true
+```

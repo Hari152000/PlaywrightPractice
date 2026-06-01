@@ -1,0 +1,3 @@
+Simple Alert message: I am an alert box!
+Confirmation Alert message: Confirm pop up with OK and Cancel button
+Prompt Alert message: Do you like Automation ?
