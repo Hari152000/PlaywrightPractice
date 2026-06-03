@@ -20,7 +20,7 @@ test('Alert handling', async({page})=>{
     //Prompt Alert
     await page.once('dialog', async(dialog)=>{
         await console.log("Prompt Alert message:", dialog.message())
-        await dialog.accept("Hari")
+        await dialog.accept("Hari Haran")
     })
     await page.locator('//a[text()="Alert with Textbox "]').click()
     await page.locator('//button[@class="btn btn-info"]').click()
