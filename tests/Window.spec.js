@@ -8,7 +8,7 @@ test('Window Handling', async({ browser })=>{
     await page.keyboard.press('Enter')
 
     const [newpage]= await Promise.all([context.waitForEvent('page'),
-    // page.click('//div[text()="Apple iPhone 17 Pro (Cosmic Orange, 256 GB)"]')
+    page.click('//div[text()="Apple iPhone 17 Pro (Cosmic Orange, 256 GB)"]')
    ])
    
     await newpage.waitForLoadState()
